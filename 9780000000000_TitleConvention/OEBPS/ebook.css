@@ -1,0 +1,695 @@
+/* --------------------------------------------------------------
+/ CSS
+----------------------------------------------------------------- */
+
+/* ---------------------------Page Margins--------------------------- */
+
+@page {
+	margin-top:9pt;
+	margin-bottom:1pt;
+}
+
+body {
+	margin-left:12pt;
+	margin-right:12pt;
+	font-weight:normal;
+	font-size:medium;
+	font-family:Charter, Georgia, serif;
+}
+
+body.bk_metadata {
+	margin:0;
+	text-align:center;
+} /* ! */
+
+/* ---------------------------Images--------------------------- */
+
+img {
+	max-width:100%;
+}
+
+div.figure {
+	text-align:center;
+	text-indent:0em;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+div.figurenospace {
+	text-align:center;
+	text-indent:0em;
+	margin:0em;
+}
+
+p.image-center {
+	text-align:center;
+	margin-top:1em;
+	margin-bottom:1em;
+} /* Word:Image center */
+
+p.image-center-caption {
+	font-style:italic;
+	text-align:center;
+	margin-bottom:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Image center caption */
+
+/* ---------------------------Links--------------------------- */
+
+a {
+	font-style:italic;
+	color:#903;
+	-webkit-text-fill-color:#903;
+	text-decoration:none;
+}
+
+span.link {
+	color:#903;
+	-webkit-text-fill-color:#903;
+	text-decoration:none;
+}
+
+a.normal {
+	font-style:normal;
+	color:#903;
+	-webkit-text-fill-color:#903;
+	text-decoration:none;
+} /* ! */
+
+/* ---------------------------Heads--------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	page-break-inside:avoid;
+	page-break-after:avoid;
+}
+
+h1.chapter-number, h1.chapter-title, h1.part-title, h1.publ_section_frontmatter_title, h1.publ_section_endmatter_title {
+	font-family:serif;
+	text-align:center;
+	text-indent:0em;
+	margin-top:4em;
+	margin-bottom:2em;
+} /* Word:Title */
+
+p.chapter-author {
+}
+
+.subtitle1 {
+	font-family:serif;
+	text-align:center;
+	margin-top:0em;
+	margin-bottom:2em;
+	text-indent:0em;
+} /* Word:Chapter title subtitle */
+
+div.keeptext {
+	page-break-inside:avoid;
+	margin:0 !important;
+}
+
+h3.listing-head, h4.listing-subhead, p.listing-entry, p.listing-entry-sa, p.listing-addr, p.listing-tel, p.listing-email, p.listing-url, p.gl-entry, p.gl-def, p.p-bib1 {
+	font-family:Verdana, Geneva, sans-serif;
+	-webkit-hyphens: none !important;
+	-moz-hyphens: none;
+	hyphens: none;
+	adobe-hyphenate: none;
+} 
+
+h3.listing-head, h4.listing-subhead, p.gl-entry {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+h4.listing-subhead {
+	margin-bottom: 0pt;
+}
+
+/* ---------------------------Body Text--------------------------- */
+
+p { 
+	font-size:1em; 
+	font-style:normal; 
+	font-weight:normal; 
+	line-height:1.5; 
+	margin:0; 
+	text-align:left; 
+	text-indent:0; 
+	widows:2; 
+	orphans:2; 
+	-webkit-hyphenate-before:3; 
+	hyphenate-before:3; 
+	-webkit-hyphenate-after:3; 
+	hyphenate-after:3; 
+	-webkit-hyphenate-lines:2; 
+	hyphenate-lines:2;
+}
+
+p.p-left {
+} /* Word:Normal FL */
+
+p.p-left-sa {
+	margin-top:1em;
+} /* Word:Normal FL space above */
+
+p.p-indent-fl {
+	text-indent:2em;
+} /* Word:Normal Indent */
+ 
+p.p-indent-fl-sa {
+	text-indent:2em;
+	margin-top:1em;
+} /* Word:Normal Indent space above */
+ 
+p.p-center {
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Center */
+
+p.p-center-sa {
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:1em;
+} /* Word:Center space above */
+
+p.p-right {
+	text-align:right;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Right */
+
+p.p-right-sa {
+	text-align:right;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:1em;
+} /* Word:Right space above */
+
+p.spacebreak1 {
+	font-weight:normal;
+	font-style:normal;
+	text-align:center;
+	margin-top:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Signature */ /* row of three bullets */
+
+/* ---------------------------Blockquotes--------------------------- */
+
+div.grouping_quot {
+	margin-top:1em;
+	margin-right:0em;
+	margin-bottom:0em;
+	margin-left:0em;
+}
+
+p.blockquot-left {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	margin-left:2.1em;
+	margin-right:2.1em;
+} /* Word:Blockquote FL */
+
+p.blockquot-left-sa {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	margin-left:2.1em;
+	margin-right:2.1em;
+	margin-top:1em;
+} /* Word:Blockquote FL space above */
+
+p.blockquot-indent-fl {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	margin-left:2.1em;
+	margin-right:2.1em;
+	text-indent:1em;
+} /* Word:Blockquote Indent */
+
+p.blockquot-indent-fl-sa {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	margin-right:2.1em;
+	margin-left:2.1em;
+	text-indent:1em;
+	margin-top:1em;
+} /* Word:Blockquote Indent space above */
+
+p.blockquot-right {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	margin-left:2.1em;
+	margin-right:2.1em;
+	text-align:right;
+} /* Word:Blockquote right */
+
+p.blockquot-right-sa {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	margin-left:2.1em;
+	margin-right:2.1em;
+	text-align:right;
+	margin-top:1em;
+} /* Word:Blockquote right space above */
+
+/* ---------------------------Quotes--------------------------- */
+
+p.quot-center {
+	text-align:center;
+	margin-top:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Quote center */
+
+p.quot-center-sa {
+	text-align:center;
+	margin-top:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:1em;
+} /* Word:Quote center space above */
+
+p.quot-center-source {
+	text-align:center;
+	margin-top:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Quote center author */
+
+/* ---------------------------Lists--------------------------- */
+
+ol.grouping_ol, ul.grouping_ul {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+ol {
+	adobe-text-layout:optimizeSpeed;
+} /* to fix NookColor bug */
+
+li.p-bullet1, li.p-numbered1 {
+	font-size:1em; 
+	line-height:1.5em;
+	text-align:left;
+	widows:2;
+	orphans:2;
+	-webkit-hyphenate-before:3;
+	hyphenate-before:3;
+	-webkit-hyphenate-after:3;
+	hyphenate-after:3;
+	-webkit-hyphenate-lines:2;
+	hyphenate-lines:2;
+}
+
+/* ---------------------------Spans--------------------------- */
+
+span.emphasis {
+	font-style:italic;
+	font-weight:normal;
+} /* maps to <em> */
+em.i {
+     font-style: italic;
+     font-weight: normal;
+}
+
+span.strong {
+	font-style:normal;
+	font-weight:bold;
+} /* maps to <strong> */
+strong.b {
+	font-style:normal;
+    font-weight: bold;
+}
+
+span.strongemphasis {
+	font-style:italic;
+	font-weight:bold;
+} /* maps to <em><strong> */
+span.bi {
+     font-style: italic;
+     font-weight: bold;
+}
+
+span.normal {
+	font-style:normal;
+}
+
+span.sc {
+	font-size:80%;
+}
+span.smallcaps {
+	font-size:80%;
+}
+span.small-cap {
+	font-size:80%;
+}
+
+span.underline {
+	text-decoration:underline;
+}
+
+span.link-media {
+     font-weight: bold;
+     text-transform: none;
+}
+
+/* ---------------------------FM and EM--------------------------- */
+
+h1.titlepage-title {
+	font-family:serif;
+	font-weight:normal;
+	font-style:normal;
+	font-size:x-large;
+	line-height:1.5em;
+	margin:60px 0em 0em 0em;
+	text-indent:0em;
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Title page title */
+
+.titlepage-subtitle {
+	font-family:serif;
+	font-weight:normal;
+	font-style:normal;
+	font-size:large;
+	margin:1em 0em 0em 0em;
+	text-indent:0em;
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Title page subtitle */
+
+h1.titlepage-author-sa {
+	font-family:serif;
+	font-weight:normal;
+	font-style:normal;
+	font-size:large;
+	margin:2em 0em 0em 0em;
+	text-indent:0em;
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Title page author space above */
+
+h1.titlepage-author {
+	font-family:serif;
+	font-weight:normal;
+	font-style:normal;
+	font-size:large;
+	margin:0em 0em 0em 0em;
+	text-indent:0em;
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Title page author */
+
+p.titlepage-imprintlogo {
+	font-family:serif;
+	font-size:small;
+	text-align:center;
+	margin:3em 0em 0em 0em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Title page imprint logo */
+ 
+p.titlepage-imprintaddress {
+	font-family:serif;
+	font-size:small;
+	margin:0em 0em 0em 0em;
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Title page imprint address */
+
+p.copyright-top {
+	font-size:small;
+	line-height:normal;
+	text-align:left;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:50px;
+} /* Word:Copyright first line; changed from p.copyright-fl on 7/16/2014 */
+
+p.copyright {
+	font-size:small;
+	line-height:normal;
+	text-align:left;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Copyright */
+
+p.copyright-sa {
+	font-size:small;
+	line-height:normal;
+	text-align:left;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:1em;
+} /* Word:Copyright space above */
+
+p.dedication-top {
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:50px;
+} /* Word:Dedication first line; changed from p.dedication-fl on 7/16/2014 */
+
+p.contents {
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+}
+
+p.contents-sa {
+	text-align:center;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+	margin-top:1em;
+}
+
+div.alsoavailable-cover {
+	text-align:center;
+	margin-top:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Also available cover */
+
+p.alsoavailable-text {
+    font-size:large;
+	text-align:center;
+	margin-top:1em;
+	-webkit-hyphens:none !important;
+	-moz-hyphens:none;
+	hyphens:none;
+	adobe-hyphenate:none;
+} /* Word:Also available text */
+
+/* tables */
+table {
+	border-collapse:collapse;
+	margin-top:1em;
+	margin-bottom:1em;
+	border:1px solid;
+	max-width:100%;
+	page-break-inside:avoid;
+}
+
+th {
+	border:1px solid;
+	padding:6px;
+	text-align:left;
+	vertical-align:top;
+	-webkit-hyphens:none !important;
+	adobe-hyphenate:none !important;
+	-moz-hyphens:none !important;
+	hyphens:none !important;
+	hyphens:0 !important;
+}
+
+td {
+	font-family:"Helvetica Neue", Verdana, Geneva, sans-serif;
+	font-size:small;
+	border:1px solid;
+	padding:4px;
+	text-align:left;
+	vertical-align:top;
+	-webkit-hyphens:none !important;
+	adobe-hyphenate:none !important;
+	-moz-hyphens:none !important;
+	hyphens:none !important;
+	hyphens:0 !important;
+}
+
+/* ---------------------------Cover--------------------------- */
+p.publishingproduct_cover_image {
+   text-align:center;
+}
+
+/*  ---------recipes-------  */
+
+
+span.sup, span.frac-numer, span.frac-denom, span.note_ref {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+span.frac-denom {
+	font-size: 0.6em;
+	vertical-align: -0.1em;
+	line-height: 0;
+}
+
+span.frac-numer {
+	font-size: 0.6em;
+	vertical-align: 0.5em;
+	line-height: 0;
+}
+
+span.sup {
+	vertical-align: 0.5em;
+}
+
+span.sub {
+	vertical-align: -0.1em;
+}
+/* ---------------------------Table of contents--------------------------- */
+
+h1.epub_toctitle {
+font-family:serif;
+text-align:left;
+text-indent:0em;
+margin-top:3em;
+margin-bottom:1em;
+}
+
+ol.epub_toc {
+margin-left:0em;
+list-style-type:none;
+line-height:1.5;
+}
+
+ul.epub_toc {
+	margin-left:0em;
+list-style-type:none;
+line-height:1.5;
+
+}
+
+li.epubtocitem {
+-webkit-hyphens:none !important;
+-moz-hyphens:none;
+hyphens:none;
+adobe-hyphenate:none;
+}
+
+/* tables */
+th.p-tab-num1 {
+	background-color:#999;
+} /*[TN] MAPS TO th.p-tab.num1*/
+
+th.p-tab-h1 {
+	background-color:#999;
+} /*[TT] MAPS TO th.p-tab.h1*/
+
+p.p-tab-num1, p.p-tab-h1, p.p-tab-hrow1, p.p-tab-hrow2 {
+	font-family:"Helvetica Neue", Verdana, Geneva, sans-serif;
+	font-size:1em;
+	font-weight:bold;
+} /*[TN] MAPS TO p.p-tab.num1 [TT] MAPS TO p.p-tab.h1*/
+
+th.p-tab-hrow1 {
+	background-color:#CCC;
+} /*[T1] MAPS TO th.p-tab-hrow1*/
+
+th.p-tab-hrow2 {
+	background-color:#FFF;
+} /*[T2] MAPS TO th.p-tab-hrow2*/
+
+p.p-tab-hrow1 {
+	font-size:.8em;
+} /*[T1] MAPS TO p.p-tab-hrow1*/
+
+p.p-tab-hrow2 {
+	font-size:.7em;
+} /*[T2] MAPS TO p.p-tab-hrow2*/
+
+td.p-tab {
+}/*[TB] MAPS TO td.p-tab*/
+
+p.p-tab {
+}/*[TB] MAPS TO p.p-tab*/
+
+p.p-tab-fn1, p.p-tab-fn1-indent-fl {
+	font-size:0.75em;
+	margin-top:0.25em;
+}/*[TFN] MAPS TO td.p-tab-fn1*/
+
+p.p-tab-fn1-indent-fl {
+	margin-top:0em;
+	text-indent:1em;
+}/*[TFN2] MAPS TO td.p-tab-fn1-indent-fl*/
+
+
+/* ---------------------------Media Queries--------------------------- */
+
+@media amzn-kf8 {
+body {
+	margin-right:0;
+	margin-left:0;
+} /* resets margins for Fire tablet */
+}
+
+/* END OF MAPPED CSS. ANYTHING BELOW THIS LINE IS AUTO-GENERATED BY THE CMS AND SHOULD BE CHECKED. */
