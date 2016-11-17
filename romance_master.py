@@ -52,29 +52,25 @@ os.rename('cover.jpg', isbn + '.jpg')
 
 opf = open(oebps_folder + '/content.opf')
 opf_contents = opf.read()
+opf = open(oebps_folder + '/content.opf', 'wb')
 
 # Get rid of new lines
-
-opf_contents = opf_contents.replace('\n', '')
-opf_contents = opf_contents.replace('>  <', '><')
-opf = open(oebps_folder + '/content.opf', 'w')
+# this was the source of some error I couldn't figure out later on.
+opf_contents = opf_contents.replace('\r', '')
+opf_contents = opf_contents.replace('\r', '')
+opf_contents = opf_contents.replace('  ', ' ')
 
 ## Spine regex
 
-spine_regex = r'<spine toc="ncx" page-progression-direction="ltr"><itemref idref="toc" /><itemref idref="(.*?)" /><itemref idref="(.*?)" />'
+spine_regex = '<spine toc="ncx" page-progression-direction="ltr">\n<itemref idref="toc" />\n <itemref idref="(.*?)" />\n <itemref idref="(.*?)" />'
 spine_subst = r'<spine toc="ncx" page-progression-direction="ltr"><itemref idref="cover" linear="yes" /><itemref idref="\1" /><itemref idref="\2" /><itemref idref="newsletter" /><itemref idref="toc" />'
 opf_contents = re.sub(spine_regex, spine_subst, opf_contents)
 
 ## metadata regex 
 
-metadata_regex = r'<dc:identifier id="bookid"></dc:identifier><dc:date>(.*?)</dc:date><dc:rights></dc:rights><meta name="cover" content="I" />'
-metadata_subst = r'<dc:date>\1</dc:date><dc:identifier id="bookid">' + str(isbn) + r'</dc:identifier><dc:creator id="mainauthor1">' + str(firstName) + ' ' + str(lastName) + r'</dc:creator><meta refines="#mainauthor1" property="role" scheme="marc:relators">aut</meta><meta refines="#mainauthor1" property="file-as">' + str(lastName) + r', ' + str(firstName) + r'</meta><meta refines="#mainauthor1" property="display-seq">1</meta><dc:publisher>Adams Media</dc:publisher><dc:rights>WORLD</dc:rights><meta name="cover" content="Icover.jpg" />'
+metadata_regex = '<dc:identifier id="bookid"></dc:identifier>\n<dc:date>(.*?)</dc:date>\n<dc:rights></dc:rights>'
+metadata_subst = r'<dc:date>\1</dc:date><dc:identifier id="bookid">' + str(isbn) + r'</dc:identifier><dc:creator id="mainauthor1">' + str(firstName) + ' ' + str(lastName) + r'</dc:creator><meta refines="#mainauthor1" property="role" scheme="marc:relators">aut</meta><meta refines="#mainauthor1" property="file-as">' + str(lastName) + r', ' + str(firstName) + r'</meta><meta refines="#mainauthor1" property="display-seq">1</meta><dc:publisher>Adams Media</dc:publisher><dc:rights>WORLD</dc:rights>'
 opf_contents = re.sub(metadata_regex, metadata_subst, opf_contents)
-
-
-## Re-expand OPF contents, in case we need to take another look
-opf_contents = opf_contents.replace('><', '>\n<')
-opf_contents = opf_contents.replace('> <', '>\n<')
 
 opf.write(opf_contents)
 opf.close()
